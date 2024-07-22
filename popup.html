@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Sonic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="index.js"></script>
+</head>
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    width: 210px;
+    height: 200px;
+    background-color: #252525;
+    box-shadow: 3px 3px #fafafa;
+  }
+
+  button {
+    font-family: monospace;
+    font-size: 1.5rem;
+    color: #FAFAFA;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #FAFAFA;
+    background: #252525;
+    box-shadow: 3px 3px #fafafa;
+    cursor: pointer;
+    margin: 12px 0;
+  }
+
+  button:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+  }
+</style>
+
+<body>
+  <div class="container">
+    <button class="ended-btn">
+      Biu!
+    </button>
+    <button class="call-btn">
+      Call Sonic!
+    </button>
+  </div>
+</body>
+
+</html>
