@@ -14,39 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  addClickListener && addClickListener('.ended-btn', 'click', () => {
+  addClickListener('.ended-btn', 'click', () => {
     applyfastEnded()
   })
-  addClickListener && addClickListener('.call-btn', 'click', () => {
+
+  addClickListener('.call-btn', 'click', () => {
     applyCallSonic()
   })
-  // var eb = document.querySelector(".ended-btn");
-  // if (eb) {
-  //   eb.addEventListener('click', async () => {
-  //     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-  //     if (tab) {
-  //       chrome.scripting.executeScript({
-  //         target: { tabId: tab.id },
-  //         func: () => {
-  //           applyfastEnded();
-  //         }
-  //       });
-  //     }
-  //   });
-
-  //   var cb = document.querySelector(".call-btn");
-  //   if (cb) {
-  //     cb.addEventListener('click', async () => {
-  //       const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-  //       if (tab) {
-  //         chrome.scripting.executeScript({
-  //           target: { tabId: tab.id },
-  //           func: () => {
-  //             applyCallSonic();
-  //           }
-  //         });
-  //       }
-  //     });
-  //   }
-  // }
 });
