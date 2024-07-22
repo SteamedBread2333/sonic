@@ -33,7 +33,6 @@ function applyCallSonic() {
       cursor: pointer;
       margin: 12px 0;
     `
-    fixedElement.style.ac
     fixedElement.style.cssText = styleStr;
     fixedElement.onclick = () => {
       applyfastEnded && applyfastEnded()
